@@ -1,0 +1,40 @@
+{
+  "name": "peerio-commons",
+  "version": "0.1.0",
+  "description": "Collection of common artifacts for Peerio server",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "check-coverage": "istanbul check-coverage",
+    "lint": "eslint . --fix --ext .js",
+    "validate": "npm-run-all --parallel lint test --serial check-coverage",
+    "release": "standard-version && git push --follow-tags origin master",
+      "commit": "peerio-commit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "3.4.3",
+    "lodash": "4.15.0",
+    "q": "1.4.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "eslint": "3.4.0",
+    "eslint-config-strict": "9.1.0",
+    "eslint-plugin-filenames": "1.1.0",
+    "istanbul": "0.4.5",
+    "jsdoc": "3.4.0",
+    "mocha": "3.0.2",
+    "npm-run-all": "3.0.0",
+    "peerio-commit": "1.0.0",
+    "sinon": "1.17.5",
+    "standard-version": "2.4.0"
+  },
+  "keywords": [
+    "peerio"
+  ],
+  "engines": {
+    "node": "6.2.2"
+  }
+}

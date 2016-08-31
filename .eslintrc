@@ -1,0 +1,124 @@
+{
+    "env": {
+        "browser": false,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "script",
+        "ecmaFeatures": {
+            "jsx": false,
+            "impliedStrict": false
+        }
+    },
+    "extends": "strict/es6",
+    "rules": {
+        "filenames/match-regex": [
+            "error",
+            "^[a-z_]+$",
+            true
+        ],
+
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+
+        "indent": [
+            "error",
+            4
+        ],
+
+        "quotes": [
+            "warn",
+            "single"
+        ],
+
+        "semi": [
+            "error",
+            "always",
+            { "omitLastInOneLineBlock": true}
+        ],
+
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+
+        "no-trailing-spaces": "error",
+
+        "eol-last": "error",
+
+        "no-console": "warn",
+
+        "curly": [
+            "error",
+            "all"
+        ],
+
+        "no-alert": "off",
+
+        "consistent-return": "error",
+
+        "no-use-before-define": "off",
+
+        "no-irregular-whitespace": "error",
+
+        "space-unary-ops": "off",
+
+        "no-unused-expressions": "off",
+
+        "no-undef": "off",
+
+        "newline-after-var": "off",
+
+        "no-magic-numbers": "off",
+
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+
+        "id-match": "off",
+
+        "id-length": "off",
+
+        "id-blacklist": [
+            "error",
+            // These name the type but have no other real context. Try naming with context
+            "array",
+            "func",
+            "object",
+            "string",
+            "num",
+            "number",
+            // Common placeholder variables, avoid these in real code
+            "foo",
+            "bar",
+            "baz",
+            "bang",
+            "biz",
+            "bong",
+            "tmp",
+            "temp",
+            "thing",
+            // These are common names for `this`. Instead use bind or arrow functions
+            "that",
+            "self",
+            "context"
+        ],
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "func-style": "off",
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "valid-jsdoc": "error"
+    }
+}
