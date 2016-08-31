@@ -27,7 +27,7 @@
     "jsdoc": "3.4.0",
     "mocha": "3.0.2",
     "npm-run-all": "3.0.0",
-    "peerio-commit": "1.0.0",
+    "peerio-commit": "1.0.1",
     "sinon": "1.17.5",
     "standard-version": "2.4.0"
   },
