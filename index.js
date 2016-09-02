@@ -8,6 +8,7 @@ const TypedException = require('./lib/_typed_exception');
 const StatusException = require('./lib/_status_exception');
 const pairs = require('./lib/_pairs');
 const uniquePairs = require('./lib/_uniquePairs');
+const arrayIntersect = require('./lib/_arrayIntersect');
 
 module.exports = {
     asynq,
@@ -17,7 +18,7 @@ module.exports = {
     parsing,
     privates,
     uniquePairs,
-
+    arrayIntersect,
     exceptions: {
         TypedException,
         StatusException
