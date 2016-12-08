@@ -26,6 +26,7 @@
     "istanbul": "0.4.5",
     "jsdoc": "3.4.0",
     "mocha": "3.0.2",
+    "mustache": "2.2.1",
     "npm-run-all": "3.0.0",
     "peerio-commit": "1.0.1",
     "sinon": "1.17.5",
