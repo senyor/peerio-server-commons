@@ -11,7 +11,9 @@ const uniquePairs = require('./lib/_unique_pairs');
 const arrayIntersect = require('./lib/_arrayIntersect');
 const MultibufferReadableStream = require('./lib/streams/multi_buffer_readable_stream');
 const BufferWritableStream = require('./lib/streams/buffer_writable_stream');
+const JunkReadableStream = require('./lib/streams/junk_readable_stream');
 const MustacheGroomer = require('./lib/_mustache_groomer');
+const Timer = require('./lib/_timer');
 
 module.exports = {
     asynq,
@@ -28,7 +30,9 @@ module.exports = {
     },
     streams: {
         MultibufferReadableStream,
-        BufferWritableStream
+        BufferWritableStream,
+        JunkReadableStream
     },
-    MustacheGroomer
+    MustacheGroomer,
+    Timer
 };
