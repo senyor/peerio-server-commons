@@ -1,6 +1,6 @@
 {
   "name": "peerio-commons",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Collection of common artifacts for Peerio server",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "3.4.3",
-    "lodash": "4.15.0",
+    "lodash": "4.16.6",
     "q": "1.4.1"
   },
   "devDependencies": {
