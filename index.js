@@ -14,6 +14,8 @@ const BufferWritableStream = require('./lib/streams/buffer_writable_stream');
 const JunkReadableStream = require('./lib/streams/junk_readable_stream');
 const MustacheGroomer = require('./lib/_mustache_groomer');
 const Timer = require('./lib/_timer');
+const TokenBucket = require('./lib/throttle/token_bucket');
+const expressThrottle = require('./lib/throttle/express_throttle');
 
 module.exports = {
     asynq,
@@ -32,6 +34,10 @@ module.exports = {
         MultibufferReadableStream,
         BufferWritableStream,
         JunkReadableStream
+    },
+    throttle: {
+        TokenBucket,
+        expressThrottle
     },
     MustacheGroomer,
     Timer

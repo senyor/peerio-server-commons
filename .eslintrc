@@ -14,78 +14,39 @@
     },
     "extends": "strict/es6",
     "rules": {
+        "array-bracket-spacing": [
+            "error",
+            "never"
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "camelcase": ["error"],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "arrow-body-style": [
+           0
+        ],
+        "dot-notation": [
+            "error",
+            {
+                "allowPattern": "^[a-z0-9]+(_[a-z0-9]+)+$"
+            }
+        ],
         "filenames/match-regex": [
             "error",
             "^[a-z_]+$",
             true
         ],
-
         "linebreak-style": [
             "error",
             "unix"
         ],
-
-        "indent": [
-            "error",
-            4
-        ],
-
-        "quotes": [
-            "warn",
-            "single"
-        ],
-
-        "semi": [
-            "error",
-            "always",
-            { "omitLastInOneLineBlock": true}
-        ],
-
-        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
-
-        "no-trailing-spaces": "error",
-
-        "eol-last": "error",
-
-        "no-console": "warn",
-
-        "curly": [
-            "error",
-            "all"
-        ],
-
-        "no-alert": "off",
-
-        "consistent-return": "error",
-
-        "no-use-before-define": "off",
-
-        "no-irregular-whitespace": "error",
-
-        "space-unary-ops": "off",
-
-        "no-unused-expressions": "off",
-
-        "no-undef": "off",
-
-        "newline-after-var": "off",
-
-        "no-magic-numbers": "off",
-
-        "arrow-parens": [
-            "error",
-            "as-needed"
-        ],
-
-        "comma-dangle": [
-            "error",
-            "never"
-        ],
-
         "id-match": "off",
-
         "id-length": "off",
-
         "id-blacklist": [
             "error",
             // These name the type but have no other real context. Try naming with context
@@ -110,15 +71,98 @@
             "self",
             "context"
         ],
-        "array-bracket-spacing": [
+        "indent": [
             "error",
-            "never"
+            4
         ],
+        "init-declarations": [
+            "off"
+        ],
+        "max-lines": ["warn", 500],
+        "no-multi-spaces": [
+            "error",
+            {
+                "exceptions": {
+                    "Property": true,
+                    "VariableDeclarator": true,
+                    "ImportDeclaration": true
+                }
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 2,
+                "maxEOF": 1
+            }
+        ],
+        "no-trailing-spaces": "error",
+        "eol-last": "error",
+        "no-console": "warn",
+        "curly": [
+            "error",
+            "all"
+        ],
+        "no-alert": "off",
+        "consistent-return": "error",
+        "no-param-reassign": "error",
+        "no-use-before-define": "off",
+        "no-irregular-whitespace": "error",
+        "no-inline-comments": "off",
+        "newline-after-var": "off",
+        "no-unused-expressions": "off",
+        "no-undef": "off",
+        "no-undefined": "off",
+        "no-magic-numbers": "off",
+        "no-underscore-dangle": "off",
+        "no-warning-comments": [
+            1
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "radix": [
+            "error",
+            "as-needed"
+        ],
+        "semi": [
+            "error",
+            "always",
+            {
+                "omitLastInOneLineBlock": true
+            }
+        ],
+        "space-unary-ops": "off",
         "func-style": "off",
         "template-curly-spacing": [
             "error",
             "never"
         ],
-        "valid-jsdoc": "error"
+        "one-var": [
+            2,
+            {
+                "var": "always",
+                "let": "always",
+                "const": "never"
+            }
+        ],
+        "valid-jsdoc": [
+            "error",
+            {
+                "requireParamDescription": false,
+                "requireReturnDescription": false
+            }
+        ],
+        "require-jsdoc": [
+            "error",
+            {
+                "require": {
+                    "FunctionDeclaration": true,
+                    "MethodDefinition": true,
+                    "ClassDeclaration": true
+                }
+            }
+        ]
     }
 }

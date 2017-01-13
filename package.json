@@ -1,6 +1,6 @@
 {
   "name": "peerio-commons",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "Collection of common artifacts for Peerio server",
   "main": "index.js",
   "scripts": {
@@ -9,13 +9,14 @@
     "lint": "eslint . --fix --ext .js",
     "validate": "npm-run-all --parallel lint test --serial check-coverage",
     "release": "standard-version && git push --follow-tags origin master",
-     "commit": "peerio-commit"
+    "commit": "peerio-commit"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bluebird": "3.4.3",
     "lodash": "4.16.6",
+    "lru-cache": "4.0.2",
     "q": "1.4.1"
   },
   "devDependencies": {
