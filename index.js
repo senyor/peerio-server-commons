@@ -16,6 +16,7 @@ const MustacheGroomer = require('./lib/_mustache_groomer');
 const Timer = require('./lib/_timer');
 const TokenBucket = require('./lib/throttle/token_bucket');
 const expressThrottle = require('./lib/throttle/express_throttle');
+const funk = require('./lib/funk');
 
 module.exports = {
     asynq,
@@ -39,6 +40,7 @@ module.exports = {
         TokenBucket,
         expressThrottle
     },
+    funk,
     MustacheGroomer,
     Timer
 };
