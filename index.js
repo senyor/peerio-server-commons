@@ -1,5 +1,6 @@
 'use strict';
 const asynq = require('./lib/_asynq');
+const doesExtend = require('./lib/_does_extend');
 const parsing = require('./lib/_parsing');
 const privates = require('./lib/_privates_holder');
 const lazyFlake = require('./lib/_lazy_flake');
@@ -21,6 +22,7 @@ const funk = require('./lib/funk');
 module.exports = {
     asynq,
     bluebird2q,
+    doesExtend,
     lazyFlake,
     pairs,
     parsing,
