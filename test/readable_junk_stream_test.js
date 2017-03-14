@@ -10,7 +10,7 @@ describe('Readable Junk Stream', () => {
         const st = new JunkReadableStream('testStream', 0);
         const destination = new BufferWritableStream();
         st.pipe(destination);
-        expect(destination.buffer).to.deep.equal(new Buffer([]));
+        expect(destination.buffer).to.deep.equal(Buffer.from([]));
     });
 
     it('should produce non empty stream of 1024 length', function () {

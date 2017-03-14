@@ -11,7 +11,7 @@ describe('privates holder object', () => {
     });
 
     it('should return same value that was set', function () {
-        privates.setPrivate(obj, 'someProperty', new Buffer([100, 200, 300]));
-        expect(privates.getPrivate(obj, 'someProperty')).to.be.deep.equal(new Buffer([100, 200, 300]));
+        privates.setPrivate(obj, 'someProperty', Buffer.from([100, 200, 300]));
+        expect(privates.getPrivate(obj, 'someProperty')).to.be.deep.equal(Buffer.from([100, 200, 300]));
     });
 });
