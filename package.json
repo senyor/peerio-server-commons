@@ -30,7 +30,7 @@
     "mustache": "2.3.0",
     "npm-run-all": "4.0.2",
     "peerio-commit": "1.0.1",
-    "sinon": "2.1.0",
+    "sinon": "2.2.0",
     "standard-version": "4.0.0"
   },
   "keywords": [
