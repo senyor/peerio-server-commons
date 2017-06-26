@@ -1,4 +1,5 @@
 'use strict';
+
 const asynq = require('./lib/_asynq');
 const doesExtend = require('./lib/_does_extend');
 const parsing = require('./lib/_parsing');
