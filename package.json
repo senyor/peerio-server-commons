@@ -22,7 +22,7 @@
   "devDependencies": {
     "chai": "4.0.2",
     "eslint": "4.1.1",
-    "eslint-config-strict": "13.0.0",
+    "eslint-config-strict": "14.0.0",
     "eslint-plugin-filenames": "1.2.0",
     "istanbul": "0.4.5",
     "jsdoc": "3.4.3",
