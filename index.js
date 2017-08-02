@@ -11,6 +11,7 @@ const StatusException = require('./lib/_status_exception');
 const pairs = require('./lib/_pairs');
 const uniquePairs = require('./lib/_unique_pairs');
 const arrayIntersect = require('./lib/_arrayIntersect');
+const deductSet = require('./lib/_deduct_set');
 const MultibufferReadableStream = require('./lib/streams/multi_buffer_readable_stream');
 const BufferWritableStream = require('./lib/streams/buffer_writable_stream');
 const JunkReadableStream = require('./lib/streams/junk_readable_stream');
@@ -30,6 +31,7 @@ module.exports = {
     privates,
     uniquePairs,
     arrayIntersect,
+    deductSet,
     exceptions: {
         TypedException,
         StatusException
