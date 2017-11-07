@@ -28,7 +28,7 @@
     "jsdoc": "3.5.5",
     "mocha": "3.5.3",
     "mustache": "2.3.0",
-    "npm-run-all": "4.1.1",
+    "npm-run-all": "4.1.2",
     "peerio-commit": "1.0.1",
     "sinon": "2.4.1",
     "standard-version": "4.2.0"
