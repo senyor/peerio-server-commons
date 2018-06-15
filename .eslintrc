@@ -114,7 +114,7 @@
         "no-undef": "off",
         "no-undefined": "off",
         "no-magic-numbers": "off",
-        "no-mixed-operator": "off",
+        "no-mixed-operators": "off",
         "no-process-env": "off",
         "no-underscore-dangle": "off",
         "no-warning-comments": [
