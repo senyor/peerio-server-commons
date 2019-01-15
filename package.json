@@ -1,5 +1,5 @@
 {
-  "name": "peerio-commons",
+  "name": "@peerio/peerio-server-commons",
   "version": "0.3.13",
   "description": "Collection of common artifacts for Peerio server",
   "main": "index.js",
@@ -8,11 +8,9 @@
     "check-coverage": "istanbul check-coverage",
     "lint": "eslint . --fix --ext .js",
     "validate": "npm-run-all --parallel lint test --serial check-coverage",
-    "release": "standard-version && git push --follow-tags origin master",
-    "commit": "peerio-commit"
+    "doc": "jsdoc -c jsdoc.conf.json && git add doc/*",
+    "semantic-release": "semantic-release"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bluebird": "3.5.3",
     "lodash": "4.17.11",
@@ -22,21 +20,70 @@
   "devDependencies": {
     "chai": "4.1.2",
     "eslint": "5.0.0",
+    "cz-conventional-changelog": "2.1.0",
     "eslint-config-strict": "14.0.1",
     "eslint-plugin-filenames": "1.3.2",
     "istanbul": "0.4.5",
     "jsdoc": "3.5.5",
-    "mocha": "5.0.1",
+    "mocha": "5.2.0",
     "mustache": "3.0.1",
     "npm-run-all": "4.1.4",
-    "peerio-commit": "1.0.1",
     "sinon": "6.0.1",
-    "standard-version": "4.4.0"
+    "validate-commit-msg": "2.14.0",
+    "semantic-release": "^15.12.0"
   },
   "keywords": [
     "peerio"
   ],
   "engines": {
-    "node": "6.9.1"
-  }
+    "node": "10.12.0"
+  },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm run validate",
+            "pre-commit": "npm run doc",
+            "commit-msg": "validate-commit-msg"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        },
+        "validate-commit-msg": {
+            "types": [
+                "feat",
+                "fix",
+                "docs",
+                "style",
+                "refactor",
+                "perf",
+                "test",
+                "chore",
+                "revert",
+                "WIP"
+            ],
+            "warnOnFail": false,
+            "maxSubjectLength": 100,
+            "subjectPattern": ".+",
+            "helpMessage": "Convention: https://goo.gl/3TgTsh"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/peeriotechnologies/peerio-server-commons.git"
+    },
+    "publishConfig": {
+        "access": "restricted"
+    },
+    "bugs": {
+        "url": "https://github.com/peeriotechnologies/peerio-server-commons/issues"
+    },
+    "homepage": "https://github.com/peeriotechnologies/peerio-server-commons#readme",
+    "directories": {
+        "doc": "doc",
+        "lib": "lib",
+        "test": "test"
+    },
+    "author": "Peerio Technologies Inc",
+    "license": "UNLICENSED"
 }
