@@ -1,6 +1,6 @@
 {
-  "name": "@peerio/peerio-server-commons",
-  "version": "0.3.13",
+  "name": "@peerio/server-commons",
+  "version": "0.3.14",
   "description": "Collection of common artifacts for Peerio server",
   "main": "index.js",
   "scripts": {
