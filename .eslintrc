@@ -5,7 +5,7 @@
         "es6": true
     },
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": 2018,
         "sourceType": "script",
         "ecmaFeatures": {
             "jsx": false,
@@ -14,21 +14,33 @@
     },
     "extends": "strict/es6",
     "rules": {
+        "complexity": "off",
+        "no-process-env": "off",
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
         "array-bracket-spacing": [
             "error",
             "never"
         ],
+        "array-element-newline": "off",
         "arrow-parens": [
             "error",
             "as-needed"
         ],
-        "camelcase": ["error"],
+        "camelcase": [
+            "error"
+        ],
         "comma-dangle": [
             "error",
             "never"
         ],
+        "class-methods-use-this": "off",
         "arrow-body-style": [
-           0
+            0
         ],
         "dot-notation": [
             "error",
@@ -78,7 +90,10 @@
         "init-declarations": [
             "off"
         ],
-        "max-lines": ["warn", 500],
+        "max-lines": [
+            "warn",
+            1000
+        ],
         "no-multi-spaces": [
             "error",
             {
@@ -111,19 +126,20 @@
         "no-inline-comments": "off",
         "newline-after-var": "off",
         "no-unused-expressions": "off",
-        "no-undef": "off",
+        // "no-undef": "off",
         "no-undefined": "off",
         "no-magic-numbers": "off",
-        "no-mixed-operators": "off",
-        "no-process-env": "off",
         "no-underscore-dangle": "off",
-        "no-warning-comments": [
-            1
+        "no-warning-comments": "off",
+        "object-curly-spacing": [
+            "error",
+            "never"
         ],
         "quotes": [
             "warn",
             "single"
         ],
+        "prefer-destructuring": "off",
         "radix": [
             "error",
             "as-needed"
