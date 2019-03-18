@@ -1,5 +1,5 @@
 {
-    "name": "@peerio/peerio-server-commons",
+    "name": "@peerio/server-commons",
     "version": "1.0.1",
     "description": "Collection of common artifacts for Peerio server",
     "main": "index.js",
